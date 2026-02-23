@@ -82,17 +82,17 @@ contract('AuctionContract', function (accounts) {
         return auctionInstance.winners(0);
     }).then(function(result) {
       // TASK 15: Assert winner is not the empty address
-      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'Winner of item 0 should be set');
+      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'set winner of item 0');
       // TASK 16: Get winner of item 1
       return auctionInstance.winners(1);
     }).then(function(result) {
       // TASK 17: Assert winner of item 1 is set
-      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'Winner of item 1 should be set');
+      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'set winner of item 1');
       // TASK 18: Get winner of item 2
       return auctionInstance.winners(2);
     }).then(function(result) {
       // TASK 19: Assert winner of item 2 is set
-      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'Winner of item 2 should be set');
+      assert.notEqual(result, '0x0000000000000000000000000000000000000000', 'set winner of item 2');
     })
   });
 });
